@@ -14,13 +14,22 @@ Removes the need for a `mod.rs` in _most_ cases.
 
 ## Features
 
+Lets imagine the following file structure:
+```tree
+src/
+├── main.rs
+└── my_module/
+    ├── one.rs
+    └── two.rs
+```
+
 - **Basic**
 
   ```rs
     folder_module!(my_module);
   ```
 
-  Imports a module
+  Creates a definition for a module; recursively defining any sub-modules inside it as well.
 
 - **Flags**
 
