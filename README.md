@@ -32,7 +32,7 @@ Removes the need for a `mod.rs` in _most_ cases.
 
   There are additional flags you can use
   - `pub` _(makes the module and/or the submodules public)_
-  - `use` _(creates a `use my_module::*;` statement. Can be followed by `all` to make an individual `use sub_module::*;` for every sub module inside the main module)_
+  - `use` _(creates a `use my_module::*;` statement. Can be followed by either `all` or `*` to make an individual `use sub_module::*;` statement for every sub module inside the main module)_
 
 - **Selector**
 
