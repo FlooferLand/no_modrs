@@ -62,9 +62,9 @@ pub fn folder_module(input: TokenStream1) -> TokenStream1 {
 }
 
 fn walk(folder: &PathBuf, use_all: bool) -> (Option<TokenStream>, bool) {
-    let Some(name) = folder.file_name() else { return (None, false) };
-    let Some(name) = name.to_str() else { return (None, false) };
-    let name = format_ident!("{name}");
+    //let Some(name) = folder.file_name() else { return (None, false) };
+    //let Some(name) = name.to_str() else { return (None, false) };
+    //let name = format_ident!("{name}");
 
     let mut children = quote!();
     
